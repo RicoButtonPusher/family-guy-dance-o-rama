@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+      <head>
+      <title>ROADHOUSE</title>
+      <link rel="stylesheet" type="text/css" href="./src/styles.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+      <script src="../src/dancer.js"></script>
+      <script src="../src/blinkyDancer.js"></script>
+      <script src="../src/Brian.js"></script>
+      <script src="../src/Meg.js"></script>
+      <script src="../src/Cleveland.js"></script>
+      <script src="../src/Stewie.js"></script>
+      <script src="../src/Quagmire.js"></script>
+      <script src="../src/Peter.js"></script>
+      </head>
+      <div class="image"><img src='./src/images/familyguylogo.png'>
+      </div>
+      <img src='./src/images/dance-a-thonlogo.png'>
+      <body>
+
+
+      <div class="topbar">
+      <span class="title"></span>
+<!-- Brian  -->
+      <audio id="BrianAudio" src="./src/audio-files/brianPBJtime.mp3" autostart="false" ></audio>
+      <a onclick="playSound();" href="#" class="addDancerButton addBrianButton" data-dancer-maker-function-name="addBrian">Add Brian</a>
+      <script>
+      function playSound() {
+            var sound = document.getElementById("BrianAudio");
+            sound.play();
+      }
+      </script>
+
+<!-- Peter  -->
+      <audio id="PeterAudio" src="./src/audio-files/birdword.mp3" autostart="false" ></audio>
+      <a onclick="playPeter();" href="#" class="addDancerButton addPeterButton" data-dancer-maker-function-name="addPeter">Add Peter</a>
+      <script>
+      function playPeter() {
+            var sound = document.getElementById("PeterAudio");
+            sound.play();
+      }
+      </script>
+
+<!-- Meg  -->
+      <audio id="MegAudio" src="./src/audio-files/meg.mp3" autostart="false" ></audio>
+      <a onclick="playMeg();" href="#" class="addDancerButton addMegButton"           data-dancer-maker-function-name="addMeg">Add Meg</a>
+      <script>
+      function playMeg() {
+            var sound = document.getElementById("MegAudio");
+            sound.play();
+      }
+      </script>
+
+<!-- Quagmire  -->
+      <audio id="QuagmireAudio" src="./src/audio-files/quagmire.mp3" autostart="false" ></audio>
+      <a onclick="playQuagmire();" href="#" class="addDancerButton addQuagmireButton" data-dancer-maker-function-name="addQuagmire">Add Quagmire</a>
+      <script>
+      function playQuagmire() {
+            var sound = document.getElementById("QuagmireAudio");
+            sound.play();
+      }
+      </script>
+
+<!-- Stewie  -->
+      <audio id="StewieAudio" src="./src/audio-files/stewie.mp3" autostart="false" ></audio>
+      <a onclick="playStewie();" href="#" class="addDancerButton addStewieButton" data-dancer-maker-function-name="addStewie">Add Stewie</a>
+      <script>
+      function playStewie() {
+            var sound = document.getElementById("StewieAudio");
+            sound.play();
+      }
+      </script>
+
+<!-- Cleveland  -->
+      <audio id="ClevelandAudio" src="./src/audio-files/cleveland.mp3" autostart="false" ></audio>
+      <a onclick="playCleveland();" href="#" class="addDancerButton addClevelandButton" data-dancer-maker-function-name="addCleveland">Add Cleveland</a>
+      <script>
+      function playCleveland() {
+            var sound = document.getElementById("ClevelandAudio");
+            sound.play();
+      }
+      </script>
+
+
+      <!-- <a href="#" class="line-up">Line Up</a> -->
+      <a href="#" class="split" data-function-name="split">Clear Floor</a>
+</div>
+      <script src="src/init.js"></script>
+</body>
+
+      <audio id="player" controls style="width: 200px;" >
+      <source src="../src/audio-files/song.mp3" type="audio/mp3">
+</audio>
+
+</html>

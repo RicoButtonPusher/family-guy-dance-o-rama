@@ -1,0 +1,10 @@
+{
+  "name": "family-guy-dance-o-rama",
+  "version": "1.0.1",
+  "description": "family-guy-dance-o-rama",
+  "scripts": {
+    "start": "npx live-server"
+  },
+  "author": "Parker Lynn",
+  "license": "UNLICENSED"
+}
